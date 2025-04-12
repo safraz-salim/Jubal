@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html>
+ <body>
+ 
+
+
+<style>
+  df-messenger::part(chat-icon) {
+    width: 64px !important;   /* Increase size here */
+    height: 64px !important;
+  }
+
+  /* Optional: if you want to increase icon size in the launcher button too */
+  df-messenger::part(button) {
+    padding: 0 !important;
+  }
+</style>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Jubal"
+  agent-id="a2a3b70d-8b99-4326-825f-1099732aa3d9"
+  language-code="en"
+  chat-icon="static/media/chat.png"
+></df-messenger>
+
+
+
+ <link rel="stylesheet" type="text/css" href="static/css/style.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubal Online School of Music - Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Navbar</title>
+</head>
+<body class="bg-black">
+  <nav class="flex items-center justify-between px-20 py-2 text-white">
+    
+    <!-- Logo -->
+    <div class="flex items-center flex-shrink-0">
+      <img src="static/media/lgo.png" alt="Logo" class="w-[150px] h-auto">
+
+    </div>
+
+    <!-- Centered Navigation Links -->
+    <!-- Centered Navigation Links -->
+<div class="flex-grow flex justify-center mt-3">
+  <ul class="flex items-center space-x-6">
+    <li><a href="#" class="hover:underline">Home</a></li>
+    <li><a href="#orderInfoForm" class="hover:underline">Courses</a></li>
+    <li><a href="#about" class="hover:underline">About</a></li>
+    <li><a href="#teachers" class="hover:underline">Teachers</a></li>
+    <li><a href="#contact" class="hover:underline">Contact</a></li>
+  </ul>
+</div>
+
+
+    <!-- Sign Up & Login -->
+    <div class="flex items-center space-x-4 flex-shrink-0">
+      <button class="hover:underline">Sign Up</button>
+      <button class="hover:underline">Login</button>
+    </div>
+
+  </nav>
+</body>
+
+</html>
+
+
+
+<!-- Add this in your <head> to import a modern font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+.banner_section {
+   position: relative;
+   overflow: hidden;
+   font-family: 'Poppins', sans-serif;
+}
+
+.image_container {
+   position: relative;
+}
+
+.image_container img {
+   width: 100%;
+   display: block;
+}
+
+/* Text overlay */
+.banner_text {
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: white;
+   z-index: 1;
+   padding: 0 20px;
+}
+
+.banner_text h1 {
+   font-size: 3rem;
+   font-weight: 600;
+   margin: 0;
+}
+
+.banner_text p {
+   font-size: 1.2rem;
+   font-weight: 400;
+   margin-top: 10px;
+   color: #f0f0f0;
+}
+
+/* Optional: fade effect at bottom */
+.image_container::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 30%;
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  
+   pointer-events: none;
+}
+
+.banner_buttons {
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+
+.btn_primary, .btn_secondary {
+   display: inline-block;
+   padding: 12px 30px;
+   font-size: 1rem;
+   font-weight: 500;
+   border-radius: 30px;
+   text-decoration: none;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Primary button style */
+.btn_primary {
+   background-color: blue;
+   color: white;
+}
+
+.btn_primary:hover {
+   background-color: white;
+   transform: translateY(-3px);
+   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Secondary button style */
+.btn_secondary {
+   background-color: transparent;
+   color: white;
+   border: 2px solid white;
+}
+
+.btn_secondary:hover {
+   background-color: white;
+   color: #333;
+   transform: translateY(-3px);
+   box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+</style>
+
+<!-- Banner Section Start -->
+<div class="banner_section layout_padding">
+   <!-- Video Background -->
+   <div class="image_container">
+      <video autoplay muted loop id="banner-video">
+         <source src="static/media/piano playing.mp4" type="video/mp4">
+         Your browser does not support the video tag.
+      </video>
+
+      <!-- Header Text -->
+      <div class="banner_text">
+         <h1>Welcome to Jubal Online School of Music</h1>
+         <p>Your music journey starts here</p>
+         <div class="banner_buttons">
+            <a href="#orderInfoForm" class="btn_primary">Get Started</a>
+            <a href="#about" class="btn_secondary">Learn More</a>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- Banner Section End -->
+
+
+
+<style> 
+.featured-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px;
+  padding-bottom: 30px;
+  border-color: #FFD900;
+  margin-top: -50px; /* Overlapping hero section */
+  position: relative;
+  z-index: 10;
+  background-color: black;
+}
+
+.feature {
+  background: #0a5dab; /* blue background for elegance */
+  color: white;
+  text-align: center;
+  padding: 0px ;
+  border-radius: 0px;
+  max-width: 260px;
+  min-height: 210px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 
+            0 0 15px rgba(255, 255, 255, 0.8), 
+            0 0 30px rgba(255, 255, 255, 0.6); /* Soft white glow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid lightblue;
+  z-index: 200;
+}
+
+
+.feature img {
+  width: 500px;
+  height: auto;
+ 
+  border-radius: 0px;
+  
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+</style>
+
+
+<section class="featured-section">
+  <div class="feature">
+    <img src="static/media/zoom.jpg" alt="Live Classes">
+    <h3>Zoom Classes</h3>
+  </div>
+  <div class="feature">
+    <img src="static/media/resourses.jpg" alt="Free Resources">
+    <h3>Free Resources</h3>
+  </div>
+  <div class="feature">
+    <img src="static/media/oneonone.jpg" alt="One-on-One Tutoring">
+    <h3>One-on-One Tutoring</h3>
+  </div>
+  <div class="feature">
+    <img src="static/media/teacher.jpg" alt="Qualified Teachers">
+    <h3>Qualified Teachers</h3>
+  </div>
+</section>
+
+
+
+<style>
+.form-heading {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+
+
+/* Main Form Container */
+#orderInfoForm {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: black;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+}
+
+/* Form Container */
+#orderInfoForm .form-container {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 
+            0 0 15px rgba(0, 123, 255, 0.9), 
+            0 0 30px rgba(0, 123, 255, 0.7); /* Blue glow */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  
+}
+
+/* Package Section (Row Layout at the Top) */
+#orderInfoForm .package-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px; /* Add space between the packages and form */
+  flex-wrap: wrap;
+}
+
+/* Package Box (Smaller Size) */
+#orderInfoForm .package {
+  position: relative;
+  background: rgba(40, 40, 40, 0.9);
+  padding: 10px 0px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 174, 255, 0.4);
+  text-align: center;
+  border: 2px solid rgba(0, 174, 255, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 210px; /* Smaller package size */
+  height: 280px;
+}
+
+#orderInfoForm .package:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 174, 255, 1);
+}
+
+#orderInfoForm .package img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#orderInfoForm .package label {
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Form Section */
+#orderInfoForm .form-section {
+  background: rgba(30, 30, 30, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 174, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  color: grey;
+}
+
+/* Form Input Styles */
+#orderInfoForm input[type="text"],
+#orderInfoForm select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #00aeff;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 16px;
+}
+
+#orderInfoForm input[type="text"]:focus,
+#orderInfoForm select:focus {
+  background: black;
+  box-shadow: 0 0 8px rgba(0, 174, 255, 1);
+}
+
+/* Submit Button */
+#orderInfoForm input[type="submit"] {
+   padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #00aeff;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+  width: 20%;
+  display: block; /* Makes the button behave like a block-level element */
+  margin-left: auto; /* Centers the button horizontally */
+  margin-right: auto; /* Centers the button horizontally */
+ 
+}
+
+#orderInfoForm input[type="submit"]:hover {
+  background: #6f5fbf;
+  box-shadow: 0 0 12px #00aeff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #orderInfoForm .form-container {
+    flex-direction: column;
+  }
+  #orderInfoForm .package-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  #orderInfoForm .form-section {
+    margin-bottom: 20px;
+  }
+}
+
+
+</style>
+
+
+<form method="POST" name="orderInfoForm" id="orderInfoForm">
+  <div class="form-container">
+    <!-- Package Section (Row at the Top) -->
+    <h3 class="form-heading">CHOOSE YOUR PACKAGE</h3>
+    <div class="package-section">
+      <div class="package">
+        <input type="radio" id="packageNo" name="packageNo" value="0">
+        <label for="packageNo">
+          Guitar for Beginners<br /> $400 GYD<br />
+          <img src="./static/media/guitar (2).jpg" alt="Guitar" />
+        </label>
+      </div>
+
+      <div class="package">
+        <input type="radio" id="packageNo" name="packageNo" value="1">
+        <label for="packageNo">
+          Drums for Beginners<br /> $800 GYD<br />
+          <img src="./static/media/drum(2).jpg" alt="Drums" />
+        </label>
+      </div>
+
+      <div class="package">
+        <input type="radio" id="packageNo" name="packageNo" value="2">
+        <label for="packageNo">
+          Violin for Beginners<br /> $1500 GYD<br />
+          <img src="./static/media/violin(1).jpg" alt="Violin" />
+        </label>
+      </div>
+      
+      <div class="package">
+        <input type="radio" id="packageNo" name="packageNo" value="3">
+        <label for="packageNo">
+          Vocal for Beginners<br /> $3000 GYD<br />
+          <img src="./static/media/vocal(1).jpg" alt="Vocal" />
+        </label>
+      </div>
+
+      <div class="package">
+        <input type="radio" id="packageNo" name="packageNo" value="4">
+        <label for="packageNo">
+          Piano for Beginners<br /> $1000 GYD<br />
+          <img src="./static/media/piano.jpg" alt="Piano" />
+        </label>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form-section">
+      <table>
+        <tr> 
+          <td><label for="customerName">Name:</label></td>
+          <td><input type="text" id="customerName" name="customerName"></td>
+        </tr>
+        <tr> 
+          <td><label for="customerAddress">Address:</label></td>
+          <td><input type="text" id="customerAddress" name="customerAddress"></td>
+        </tr>
+        <tr> 
+          <td><label for="customerRegion">Region:</label></td>
+          <td>
+            <select id="customerRegion" name="customerRegion">
+              <option value='Caribbean'>Caribbean - including Guyana and Suriname</option>
+              <option value='SouthAmerica'>South America</option>
+              <option value='NorthAmerica'>North America</option>
+              <option value='Europe'>Europe including UK/Ireland/Iceland</option>
+              <option value='Asia'>Asia</option> 
+            </select>
+          </td>
+        </tr>
+        <tr> 
+          <td><label for="customerEmail">Email:</label></td>
+          <td><input type="text" id="customerEmail" name="customerEmail"></td>
+        </tr>
+        <tr> 
+          <td><label for="customerPhoneNo">Phone:</label></td>
+          <td><input type="text" id="customerPhoneNo" name="customerPhoneNo"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Submit" name="btnSubmit" id="btnSubmit"></td>
+          
+        </tr>
+        
+      </table>
+    </div>
+  </div>
+</form>
+
+
+
+  
+ <div name="orderInfoResponse" id="orderInfoResponse" class="text-center mx-auto text-white">
+  
+</div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <script>
+  
+  $( document ).ready(function() {
+    console.log( "document loaded" );
+  
+    $('#btnSubmit').click(function(event) {
+      console.log( "submit button clicked" )
+      
+      // Do not submit for.  We will submit it manually or using code below.
+      event.preventDefault();
+      
+      // Get form
+      var form = $("#orderInfoForm")[0]
+          
+      // Create a FormData object
+      var data = new FormData(form);
+      
+      console.log( data );
+      
+      // Ajax call to /student/info route in middleware
+      $.ajax( { 
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "http://localhost:5000/order/new",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 800000,
+            success: function (data) {
+              //$("#outputContent").text(data);
+              console.log( data )
+              $("#orderInfoResponse").text( data );
+            },
+            error: function (err) {
+              console.log( err )
+              console.log( "error encountered - check middleware is running" );
+            }
+            
+            });   
+      
+    });
+    
+  
+  });
+ 
+  
+  </script>
+  
+ 
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Jubal Online School of Music</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            border: white;
+        }
+
+        /* About Section */
+        .about_section {
+            background: black;
+            color: #fff;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            border: 10px white; 
+        }
+
+        /* Container for Flex Layout */
+        .about_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        /* Image Styling */
+        .about_image {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+        }
+
+        .about_image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Text Styling */
+        .about_text_content {
+            flex: 1;
+            max-width: 50%;
+            padding-left: 20px;
+        }
+
+        /* Title Styling */
+        .about_title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #f4a261;
+            margin-bottom: 20px;
+        }
+
+        /* Paragraph Styling */
+        .about_paragraph {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        /* List Styling */
+        .about_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* List Item Styling */
+        .about_list li {
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-left: 4px solid #f4a261;
+            margin-bottom: 10px;
+            color: #e0e0e0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about_section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about_image {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .about_text_content {
+                max-width: 100%;
+                padding-left: 0;
+            }
+
+            .about_title {
+                font-size: 2rem;
+            }
+
+            .about_paragraph,
+            .about_list li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Section Start -->
+    <div id="about" class="about_section">
+        <div class="about_content">
+            <!-- Image Section -->
+            <div class="about_image">
+                <img src="static/media/banner-bg.jpg" alt="Jubal Music School">
+            </div>
+
+            <!-- Text Section -->
+            <div class="about_text_content">
+                <h1 class="about_title">About Jubal Online School of Music</h1>
+                <p class="about_paragraph">
+                    Jubal Online Music School is your gateway to mastering music from the comfort of your home. Whether you're a beginner or an advanced musician, our interactive lessons, expert instructors, and flexible learning approach make it easy to sharpen your skills.
+                </p>
+                <ul class="about_list">
+                    <li><strong>Learn at Your Own Pace</strong> – Access structured courses for guitar, piano, vocals, and more.</li>
+                    <li><strong>Expert Instructors</strong> – Get guidance from experienced musicians passionate about teaching.</li>
+                    <li><strong>Flexible Scheduling</strong> – Book lessons that fit your lifestyle, whether online or in-person.</li>
+                    <li><strong>Engaging Lessons</strong> – Enjoy video tutorials, live sessions, and personalized feedback.</li>
+                </ul>
+                <p class="about_paragraph">
+                    Join <strong>Jubal Online Music School</strong> today and take your musical journey to the next level!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+</body>
+</html>
+
+     
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubal Online School of Music - Teachers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        /* Teachers Section */
+        .teachers_section {
+            background: black;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .teachers_title {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .teacher_box {
+            background: darkblue;
+            padding: 30px;
+            border-radius: 40px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            border: 3px solid yellow;
+        }
+
+        .teacher_box:hover {
+            transform: translateY(-10px);
+        }
+
+        .image_1 img {
+            width: 100%;
+            border-radius: 40px;
+            border: 3px solid #7d36e7;
+        }
+
+        .teacher_name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #16213e;
+            margin-top: 15px;
+        }
+
+        .teacher_role {
+            font-size: 16px;
+            color: #f4a261;
+        }
+
+        /* Social Icons */
+        .social_icon ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social_icon ul li {
+            display: inline-block;
+        }
+
+        .social_icon ul li a {
+            display: block;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 50%;
+            background: #16213e;
+            color: #fff;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .social_icon ul li a:hover {
+            background: #f4a261;
+        }
+
+        /* Carousel Controls */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev i,
+        .carousel-control-next i {
+            font-size: 30px;
+            color: #16213e;
+            transition: 0.3s ease;
+        }
+
+        .carousel-control-prev i:hover,
+        .carousel-control-next i:hover {
+            color: #f4a261;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .teacher_box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Teachers Section Start -->
+    <div class="teachers_section" id="teachers">
+        <div class="container">
+            <h1 class="teachers_title">Our Teachers</h1>
+            
+            <div id="teachers_slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="teacher_box">
+                                    <div class="image_1"><img src="static/media/img-1.png" alt="Teacher 1"></div>
+                                    <h4 class="teacher_name">Humour <br><span class="teacher_role">Music Instructor</span></h4>
+                                    <div class="social_icon">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teacher_box">
+                                    <div class="image_1"><img src="static/media/img-2.png" alt="Teacher 2"></div>
+                                    <h4 class="teacher_name">Jenni <br><span class="teacher_role">Violin Teacher</span></h4>
+                                    <div class="social_icon">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="teacher_box">
+                                    <div class="image_1"><img src="static/media/img-3.png" alt="Teacher 3"></div>
+                                    <h4 class="teacher_name">Morco <br><span class="teacher_role">Piano Teacher</span></h4>
+                                    <div class="social_icon">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <a class="carousel-control-prev" href="#teachers_slider" role="button" data-bs-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control-next" href="#teachers_slider" role="button" data-bs-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Teachers Section End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+  
+      
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+        }
+        .contact_section {
+            padding: 50px 0;
+            background: black;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 
+            0 0 15px rgba(0, 123, 255, 0.9), 
+            0 0 30px rgba(0, 123, 255, 0.7); /* Blue glow */
+            border-radius: 100px;
+            max-width: 70%;
+            margin: auto;
+        }
+        .contact_taital {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        form {
+            background: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 
+            0 0 15px rgba(0, 123, 255, 0.9), 
+            0 0 30px rgba(0, 123, 255, 0.7); /* Blue glow */
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        form button {
+            width: 100%;
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        #success-message {
+            color: green;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .map_main {
+            margin-top: 20px;
+            max-height: 1px;
+        }
+        .map-responsive iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="contact_section" id="contact">
+        <div class="container">
+            <h1 class="contact_taital">Get In Touch</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <h4>Contact Us</h4>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="phone" placeholder="Your Phone Number" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+                        <button type="submit" id="submit-btn">Submit</button>
+                    </form>
+                    <p id="success-message"></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="map_main">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Bel+West+Canal+%23+2+nasa" 
+                            width="600" height="800" frameborder="0" 
+                            style="border:0; width: 100%; border-radius: 8px;" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            border-color: yellow;
+        }
+        .contact_section {
+            padding: 30px 0;
+            background: black;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 
+            0 0 15px rgba(0, 123, 255, 0.9), 
+            0 0 30px rgba(0, 123, 255, 0.7); /* Blue glow */
+            border-radius: 40px;
+            max-width: 90%;
+            margin: auto;
+            border-color: yellow;
+            margin-bottom: 20px;
+        }
+        .contact_taital {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: white;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        form button {
+            width: 100%;
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        #success-message {
+            color: green;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .map_main {
+            margin-top: 20px;
+        }
+        .map-responsive iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+        }
+        .footer_section {
+            background: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer_taital {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .contact_info li {
+            list-style: none;
+            margin: 10px 0;
+        }
+        .contact_info li i {
+            margin-right: 10px;
+        }
+        .footer_social_icon ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .footer_social_icon ul li a {
+            color: white;
+            font-size: 20px;
+        }
+        .copyright_section {
+            background: darkblue;
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+  
+    <div class="footer_section">
+        <div class="container">
+            <div class="footer_section_2">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="footer_taital">Contact Information</h3>
+                        <ul class="contact_info">
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 1513 Bel West Canal #2, West Bank Demerara, Guyana</li>
+                            <li><i class="fa fa-user" aria-hidden="true"></i> Jubal School of Music</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+15927598644" style="color:white;">+1 592-759-8644</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:safrazsalim1@gmail.com" style="color:white;">safrazsalim1@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="footer_taital">Follow Us</h3>
+                        <div class="footer_social_icon">
+                            <ul>
+                                <li><a href="#" aria-label="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" aria-label="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" aria-label="Instagram"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">2025 All Rights Reserved. Design by: <a style="color:white;">Safraz Salim</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+</body>
+</html>
+
+ </body>
+</html>
