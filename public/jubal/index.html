@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Jubal Online Piano School</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+<link rel="stylesheet" media="screen,projection" type="text/css" href="css/skin.css" />
+<script type="text/javascript" src="javascript/jquery.js"></script>
+<script type="text/javascript" src="javascript/jquery.loopedslider.js"></script>
+<script type="text/javascript" src="javascript/cufon-yui.js"></script>
+<script type="text/javascript" src="javascript/font.font.js"></script>
+<script type="text/javascript">
+Cufon.replace('.cufon, .nav, .slogan', {
+    hover: true
+});
+</script>
+<!--[if IE 6]>
+<script src="javascript/pngfix.js"></script>
+<script>DD_belatedPNG.fix('.logo img, .nav a, .slider, .slider-pagination a');</script>
+<![endif]-->
+</head>
+<body id="hp">
+
+
+
+<!-- START PAGE SOURCE -->
+<div class="bg">
+  <div class="main">
+    <div class="header box">
+      <p class="logo"><a href="#"><img src="design/logo.png" alt="" /></a></p>
+      <ul class="nav box">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="subpage.html">About</a></li>
+        <li><a href="#Course">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+  
+        <!-- Add spacing here -->
+        <li style="margin-left: 30px;"><a href="login.html" target="_blank">Login</a></li>
+<li><a href="register.html" target="_blank">Register</a></li>
+      </ul>
+      </ul>
+    </div>
+
+
+
+
+    <div class="slogan">
+      <h2>Jubal Online Piano School<br /></h2>
+        <h3 style="color: white;">Unlock your true Potientials</h3>
+    </div>
+    <div class="slider">
+      <div class="slider-container">
+        <div class="slider-slides">
+          <div>
+            <div>
+              <h3 class="desc">Piano Courses<br />
+                <a href="#">REGISTER NOW</a></h3>
+              <a href="#" class="preview"><img src="tmp/slide-01.jpg" alt="" /></a> </div>
+          </div>
+          <div>
+            <div>
+              <h3 class="desc">Guitar Courses<br />
+                <a href="#">COMING SOON</a></h3>
+              <a href="#" class="preview"><img src="tmp/slide-02.jpg" alt="" /></a> </div>
+          </div>
+          <div>
+            <div>
+              <h3 class="desc">Drum Courses<br />
+                <a href="#">COMING SOON</a></h3>
+              <a href="#" class="preview"><img src="tmp/slide-03.jpg" alt="" /></a> </div>
+          </div>
+        </div>
+      </div>
+      <ul class="slider-pagination">
+        <li><a href="#"><span>1</span></a></li>
+        <li><a href="#"><span>2</span></a></li>
+        <li><a href="#"><span>3</span></a></li>
+      </ul>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('.slider').loopedSlider({
+			container: ".slider-container",
+			slides: ".slider-slides",
+			pagination: "slider-pagination",
+			containerClick: false,
+			autoStart: 5000,
+			slidespeed: 750,
+			fadespeed: 500,			
+			addPagination: true
+		});
+	});
+	</script>
+    <div class="content box" id="Course">
+      <ul class="cols3 box">
+        <li>
+          <h2 class="cufon">Beginners Course</h2>
+          <p class="thumb"><a href="#"><img src="tmp/img-01.jpg" alt="" /></a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscin lit vivamus <strong>elementum egestas</strong> adipis. Nullameg estas scelerisque libero pretium consequat. Maec ornare, est vitae dapibus blandit, libero a wuapuim lorem, ut pretium nisl <a href="#">purusa metus</a>. Pellentesque fa cilisis porta nisl, eget porta molestie ipsum.</p>
+          <p class="more"><a href="#">REGISTER NOW</a></p>
+        </li>
+        <li>
+          <h2 class="cufon">Intermediate Course</h2>
+          <p class="thumb"><a href="#"><img src="tmp/img-02.jpg" alt="" /></a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscin lit vivamus <strong>elementum egestas</strong> adipis. Nullameg estas scelerisque libero pretium consequat. Maec ornare, est vitae dapibus blandit, libero a wuapuim lorem, ut pretium nisl <a href="#">purusa metus</a>. Pellentesque fa cilisis porta nisl, eget porta molestie ipsum.</p>
+          <p class="more"><a href="#">REGISTER NOW</a></p>
+        </li>
+        <li class="last">
+          <h2 class="cufon">Advance Course</h2>
+          <p class="thumb"><a href="#"><img src="tmp/img-03.jpg" alt="" /></a></p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscin lit vivamus <strong>elementum egestas</strong> adipis. Nullameg estas scelerisque libero pretium consequat. Maec ornare, est vitae dapibus blandit, libero a wuapuim lorem, ut pretium nisl <a href="#">purusa metus</a>. Pellentesque fa cilisis porta nisl, eget porta molestie ipsum.</p>
+          <p class="more"><a href="#">REGISTER NOW</a></p>
+        </li>
+      </ul>
+    </div>
+
+    <section style="display: flex; flex-wrap: wrap; gap: 40px; padding: 30px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+     
+      <!-- Contact Form -->
+      <div style="flex: 1; min-width: 280px;" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+          <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;">
+          <textarea rows="5" placeholder="Your Message" required style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 6px;"></textarea>
+          <button type="submit" style="background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer;">Send Message</button>
+        </form>
+      </div>
+    
+      <!-- Contact Details -->
+      <div style="flex: 1; min-width: 280px;">
+        <h2>Get in Touch</h2>
+        <div style="display: flex; align-items: center; margin-bottom: 15px; font-size:medium;">
+          <i class="fas fa-phone-alt" style="margin-right: 14px; color: #007BFF;"></i> +592 123 4567
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 15px; font-size:medium;">
+          <i class="fas fa-envelope" style="margin-right: 14px; color: #007BFF;"></i> safrazsalim1@gmail.com.com
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 15px; font-size:medium;">
+          <i class="fas fa-map-marker-alt" style="margin-right: 14px; color: #007BFF;"></i> Bel West Canal# 2 Georgetown, Guyana
+        </div>
+        <div style="display: flex; align-items: center; font-size:medium;">
+          <i class="fas fa-globe" style="margin-right: 14px; color: #007BFF;"></i> www.example.com
+        </div>
+      </div>
+    </section>
+    
+    <!-- Font Awesome Icons (required) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <div class="footer box">
+      <p class="f-right t-right">Design by <a href="http://www.templatesdock.com/">TemplatesDock</a></p>
+      <p class="f-left">Copyright &copy;&nbsp;2011 <a href="#">Euphoria</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

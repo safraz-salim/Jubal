@@ -1,0 +1,86 @@
+body {
+	background-color:#FFF;
+	color:#404040;
+}
+a {
+	color:#606;
+}
+a:hover, a:active, a:focus {
+	color:#990095;
+}
+h2 {
+	color:#606;
+}
+table.table {
+	border:1px solid #CCC;
+}
+table.table th, table.table td {
+	border:1px solid #CCC;
+}
+table.table th {
+	border-bottom:3px solid #606;
+	color:#606;
+}
+table.table tr.even td {
+	background-color:#FFEDFF;
+}
+.header .nav li a {
+	color:#FFF;
+}
+.slogan h2 {
+	color:#FFF;
+}
+.footer {
+	border-top:1px solid #DDD;
+	color:#777;
+}
+.footer a {
+	color:#777;
+}
+.footer a:hover {
+	color:#333;
+}
+.slider-slides div div .desc {
+	color:#FFF;
+}
+.slider-slides div div .desc a {
+	color:#AAA;
+}
+.slider-slides div div .desc a:hover {
+	color:#FFF;
+}
+.more a {
+	background-color:#606;
+	color:#FFF;
+}
+.more a:hover {
+	background-color:#990095;
+	color:#FFF;
+}
+.main-title {
+	color:#FFF;
+}
+.sponsors li a {
+	font-size:115%;
+}
+.menu {
+	border-top:1px dotted #CCC;
+}
+.menu li a {
+	border-bottom:1px dotted #CCC;
+}
+.menu li.current a {
+	color:#555;
+}
+.sponsors {
+	color:#888;
+}
+.sponsors li {
+	border-bottom:1px dotted #CCC;
+}
+.input-text {
+	border:1px solid #CCC;
+	border-right:1px solid #EEE;
+	border-bottom:1px solid #EEE;
+	color:#888;
+}
